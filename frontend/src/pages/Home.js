@@ -1,10 +1,12 @@
 import React from "react";
 import '../static/css/Home.css'
+import Menubar from "../components/Menubar";
 
 export default function Home() {
 
 	return (
 		<body>
+			<Menubar />
 			<div className="rowFlex">
 				<div className="sidebar">
 					<p>About About About About About About About About About About About About About About About About About </p>
