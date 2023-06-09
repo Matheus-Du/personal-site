@@ -3,6 +3,7 @@ import '../static/css/AboutSection.css'
 import '../static/media/profile.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function AboutSection() {
 
@@ -24,6 +25,10 @@ export default function AboutSection() {
                 <div className="link">
                     <FontAwesomeIcon icon={faLinkedin} />
 			        <a href="https://github.com/Matheus-Du" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+                <div className="link">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <a href="mailto:duncanmatheus905@gmail.com">Email</a>
                 </div>
             </div>
         </div>
