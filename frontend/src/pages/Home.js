@@ -1,6 +1,7 @@
 import React from "react";
 import '../static/css/Home.css'
 import Menubar from "../components/Menubar";
+import AboutSection from "../components/AboutSection";
 
 export default function Home() {
 
@@ -9,7 +10,7 @@ export default function Home() {
 			<Menubar />
 			<div className="rowFlex">
 				<div className="sidebar">
-					<p>About About About About About About About About About About About About About About About About About </p>
+					<AboutSection />
 				</div>
 				<div className="columnFlex">
 					<header className="Home-header">
