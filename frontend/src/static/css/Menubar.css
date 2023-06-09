@@ -1,5 +1,5 @@
 .menubar {
-    background-color: white;
+    background-color: #A27B5C;
     width: 100%;
     position: sticky;
     top: 0;
@@ -8,7 +8,18 @@
     flex-direction: row;
 }
 
-.menubar-item {
-    margin-left: 2%;
-    margin-right: 2%;
+.menubar-button {
+    background-color: #A27B5C;
+    border: none;
+    color: #DCD7C9;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    transition-duration: 0.25s;
+}
+
+.menubar-button:hover {
+    cursor: pointer;
+    background-color: #DCD7C9;
+    color: #A27B5C;
 }
