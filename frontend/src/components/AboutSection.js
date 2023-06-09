@@ -15,7 +15,7 @@ export default function AboutSection() {
             </div>
             <div className="about">
                 <p>Student @ University of Alberta</p>
-                <p>Bsc - Computer Science (2019-2024)</p>
+                <p>Bsc - Computer Science (2019 - present)</p>
             </div>
             <div className="links">
                 <div className="link">
