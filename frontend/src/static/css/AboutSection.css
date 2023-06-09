@@ -4,11 +4,12 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 5%;
+        justify-content: left;
+        align-items: center;
     }
 
     .profile {
         margin-right: 5%;
-        justify-content: left;
     }
 }
 
@@ -20,19 +21,42 @@
     }
 }
 
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .links {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: left;
+    height: fit-content;
+    padding-left: 10px;
 }
 
-.links > a {
+.link > a {
     color: white;
     margin-bottom: 1rem;
 }
 
-.links > a:hover {
+.link:hover {
     cursor: pointer;
     color: #A27B5C;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: left;
+    gap: 10px;
+}
+
+img {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    border: 3px solid #A27B5C;
 }

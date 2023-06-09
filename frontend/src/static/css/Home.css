@@ -17,7 +17,7 @@
 @media screen and (min-width: 768px) {
 
 	.rowFlex {
-		margin-left: 5%;
+		margin-left: 2%;
 		margin-right: 5%;
 		display: flex;
 		flex-direction: row;
