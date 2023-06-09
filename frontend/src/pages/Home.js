@@ -2,6 +2,7 @@ import React from "react";
 import '../static/css/Home.css'
 import Menubar from "../components/Menubar";
 import AboutSection from "../components/AboutSection";
+import Projects from "../components/Projects";
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
 				</div>
 				<div className="columnFlex">
 					<section id="home">
+						<br />
 						<h1>Matheus Duncan</h1>
 						<p className="text">
 							Hi! I'm Matheus, a software developer from Canada. I'm currently studying Computer Science at the University of Alberta in sunny Edmonton, Alberta.
@@ -26,6 +28,7 @@ export default function Home() {
 						</p>
 					</section>
 					<section id="about">
+						<br />
 						<h1>About</h1>
 						<p className="text">
 							I've been studying Computer Science at the University of Alberta since 2019, and I'm currently in my last year of studies before graduation. My first interaction with software development began well before university however,
@@ -38,11 +41,12 @@ export default function Home() {
 							<br /><br />
 							Currently, I'm dividing my time between Edmonton, where I attend university, and Toronto, where I grew up and currently work remotely.
 							Outside of programming, I enjoy reading, going outdoors, and learning history (admittedly a somewhat unconventional minor to pair with a CS degree).
-
 						</p>
 					</section>
 					<section id="projects">
+						<br />
 						<h1>Projects</h1>
+						<Projects />
 					</section>
 					<section id="blog">
 						<h1>Blog</h1>
