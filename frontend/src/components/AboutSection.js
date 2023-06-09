@@ -10,7 +10,11 @@ export default function AboutSection() {
         <div className="main">
             <div className="profile">
                 <img src={require('../static/media/profile.jpg')} alt="Profile" />
-                <h4>Matheus Duncan</h4>
+                <h4 className="profileTitle">Matheus Duncan</h4>
+            </div>
+            <div className="about">
+                <p>Student @ University of Alberta</p>
+                <p>Bsc - Computer Science (2019-2024)</p>
             </div>
             <div className="links">
                 <div className="link">
