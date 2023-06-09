@@ -5,7 +5,7 @@ import Menubar from "../components/Menubar";
 export default function Home() {
 
 	return (
-		<body>
+		<div className="body">
 			<Menubar />
 			<div className="rowFlex">
 				<div className="sidebar">
@@ -27,6 +27,6 @@ export default function Home() {
 				</div>
 				<div className="sidebar" />
 			</div>
-		</body>
+		</div>
 	);
 }
