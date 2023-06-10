@@ -3,7 +3,7 @@ import '../static/css/Projects.css'
 
 export default function Projects() {
 
-    function goToProject(url) {
+    const  goToProject = (url) => {
         return function() {
             window.open(url, "_blank");
         }
@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="body">
             <div className="colFlex">
                 <div className="projectRow">
-                    <button className="project" onClick={ goToProject("https://github.com/open-uofa/pronunciation-practice") }>
+                    <button className="project" onClick={ goToProject("https://cmput401.ca/projects/585fbdf3-3eba-42c4-90b1-f7ba91043df5") }>
                         <h2>Pronunciation Practice App</h2>
                         <p>
                             Full-Stack web app built for a local Edmonton non-profit.

@@ -21,17 +21,29 @@
 }
 
 .project {
+    font: "Helvetica", "Arial", sans-serif;
     border: 2px solid #A27B5C;
     border-radius: 5%;
-    width: 300px;
-    color: #3F4E4F;
+    width: 100%;
+    height: 200px;
+    color: #A27B5C;
 }
 
 .project > p {
+    visibility: hidden;
     text-align: left;
+    color: #DCD7C9;
 }
 
 .project:hover {
     cursor: pointer;
-    background-color: #DCD7C9;
+    background-color: #A27B5C;
+    color: #DCD7C9;
+    transition-duration: 0.4s;
+    border-color: #DCD7C9;
+}
+
+.project:hover > p {
+    visibility: visible;
+    transition-duration: 0.4s;
 }
