@@ -32,12 +32,12 @@ export default function Home() {
 						<h1>About</h1>
 						<p className="text">
 							I've been studying Computer Science at the University of Alberta since 2019, and I'm currently in my last year of studies before graduation. My first interaction with software development began well before university however,
-							as I wrote my first program, a simple asteroids game using Unity and C#, in 8th grade. Since then, I've been interested in programming and spent most of high school writing small games and programs in Java with friends during my intro to CS classes.
+							as I wrote my first program, a simple asteroids game using Unity and C#, in 8th grade. Since then, I've continued to be interested in programming, spending most of high school writing small games and programs in Java with friends during my intro to CS classes.
 							Since starting university, I've been constantly looking for new opportunities to learn more about software development, whether through university courses, programming textbooks, or personal projects.
 							<br /><br />
 							Outside of school, I've worked as a software developer at Co-operators, where I worked mainly in full-stack web development, successfully delivering a greenfield full-stack internal web application built using React, Spring, and MySQL.
 							I also worked on enterprise-scale Java applications, where I gained experience writing unit tests, implementing new features, and fixing bugs in a (very) large codebase.
-							I've also worked on freelance projects focused mostly on full-stack web development, some of which you can check out in the <a href="#projects">Projects</a> section below.
+							I have extensive experience developing freelance projects focused mostly on full-stack web development, some of which you can check out in the <a href="#projects">Projects</a> section below.
 							<br /><br />
 							Currently, I'm dividing my time between Edmonton, where I attend university, and Toronto, where I grew up and currently work remotely.
 							Outside of programming, I enjoy reading, going outdoors, and learning history (admittedly a somewhat unconventional minor to pair with a CS degree).
