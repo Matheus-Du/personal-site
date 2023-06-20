@@ -24,7 +24,7 @@ export default function Home() {
 							I also have experience working on freelance and personal projects spanning a variety of technologies, which you can check out in the <a href="#projects">Projects</a> section below.
 							<br /><br />
 							I'm always looking for new opportunities to learn and grow as a developer. If you'd like to get in touch to talk about anything, from freelance work to book recommendations, 
-							send me an <a href="mailto:duncanmatheus905@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/matheus-duncan/">LinkedIn</a>!
+							send me an <a href="mailto:matheus@matheusdu.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/matheus-duncan/">LinkedIn</a>!
 						</p>
 					</section>
 					<section id="about">

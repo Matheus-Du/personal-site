@@ -28,7 +28,7 @@ export default function AboutSection() {
                 </div>
                 <div className="link">
                     <FontAwesomeIcon icon={faEnvelope} />
-                    <a href="mailto:duncanmatheus905@gmail.com">Email</a>
+                    <a href="mailto:matheus@matheusdu.com">Email</a>
                 </div>
             </div>
         </div>
