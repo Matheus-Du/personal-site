@@ -1,5 +1,5 @@
 import React from "react";
-import '../static/css/Home.css'
+import '../static/css/Home.css';
 import Menubar from "../components/Menubar";
 import AboutSection from "../components/AboutSection";
 import Projects from "../components/Projects";
