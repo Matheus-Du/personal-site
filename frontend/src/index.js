@@ -4,6 +4,7 @@ import './static/css/index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import HomeServer from './pages/posts/HomeServer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/blog/a-complete-guide-to-building-and-deploying-a-website-on-your-home-server" element={<HomeServer />} />
 			</Routes>
 		</BrowserRouter>
   </React.StrictMode>

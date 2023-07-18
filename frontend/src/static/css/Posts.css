@@ -1,0 +1,19 @@
+.post {
+    font: "Helvetica", "Arial", sans-serif;
+    text-align: left;
+    border: 2px solid #A27B5C;
+    width: 100%;
+    height: fit-content;
+    color: #A27B5C;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.post:hover {
+    cursor: pointer;
+    background-color: #A27B5C;
+    color: #DCD7C9;
+    transition-duration: 0.4s;
+    border-color: #DCD7C9;
+}

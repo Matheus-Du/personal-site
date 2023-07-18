@@ -3,12 +3,13 @@ import '../static/css/Home.css';
 import Menubar from "../components/Menubar";
 import AboutSection from "../components/AboutSection";
 import Projects from "../components/Projects";
+import Posts from "../components/Posts";
 
 export default function Home() {
 
 	return (
 		<div className="body">
-			<Menubar />
+			<Menubar type="home" />
 			<div className="rowFlex">
 				<div className="sidebar">
 					<AboutSection />
@@ -50,6 +51,7 @@ export default function Home() {
 					</section>
 					<section id="blog">
 						<h1>Blog</h1>
+						<Posts />
 					</section>
 				</div>
 				<div className="sidebar" />
