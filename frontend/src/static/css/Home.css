@@ -45,13 +45,13 @@
 	margin-bottom: 1rem;
 }
 
-.text > a {
-	color: #A27B5C;
-}
-
 .home-header {
 	position: sticky;
 	top: 0;
+}
+
+.text a {
+	color: #A27B5C;
 }
 
 .body {
