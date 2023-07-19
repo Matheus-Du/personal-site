@@ -50,7 +50,7 @@ If you're just getting started with Docker, I recommend checking out [portainer]
 If you're just looking to host a static website, we can easily create a Dockerfile to build a container for our site. Check out the [Dockerfile](https://github.com/Matheus-Du/personal-site/blob/main/frontend/Dockerfile.prod) for this site for an example, or [this tutorial](https://mherman.org/blog/dockerizing-a-react-app/) if you want a full step-by-step walkthrough. We can then build and run our container with the following commands from the root directory of our project (where our Dockerfile is located):
 ```bash
 docker build -t <image_name> -f Dockerfile.prod .
-docker run -rm -d -p 3000:80 -u root --restart=unless-stopped <image_name>
+docker run -d -p 3000:80 -u root --restart=unless-stopped <image_name>
 ```
 Let's take a quick look at what these commands will do:
 - `docker build -t <image_name> -f Dockerfile.prod .`: This command will build a Docker image from our Dockerfile. The `-t` flag allows us to specify a name for our image, and the `-f` flag allows us to specify the name of our Dockerfile. The `.` at the end of the command tells Docker to look for the Dockerfile in the current directory.
@@ -67,7 +67,7 @@ With our site now running on our server as a Docker container, we can start to t
 
 ### Domains
 
-The first thing every good website needs is a good domain name. If you already have a domain name, you can skip this step. If not, you'll need to purchase one from a domain registrar. I've previously used [Google Domains](https://domains.google/), but you'll likely have to find another option as Google Domains is (being acquired by Squarespace)[https://www.prnewswire.com/news-releases/squarespace-enters-definitive-agreement-to-acquire-google-domains-assets-301852507.html] sometime in the future. [Namecheap](https://www.namecheap.com/) seems to be the least-expensive registrar I can find, but any legitimate registrar should work.
+The first thing every good website needs is a good domain name. If you already have a domain name, you can skip this step. If not, you'll need to purchase one from a domain registrar. I've previously used [Google Domains](https://domains.google/), but you'll likely have to find another option as Google Domains is [being acquired by Squarespace](https://www.prnewswire.com/news-releases/squarespace-enters-definitive-agreement-to-acquire-google-domains-assets-301852507.html) sometime in the future. [Namecheap](https://www.namecheap.com/) seems to be the least-expensive registrar I can find, but any legitimate registrar should work.
 
 ### Cloudflare
 
@@ -124,6 +124,12 @@ After setting up our reverse proxy, we have finished the connection between our 
 
 &nbsp;
 ## Part 4: Addendum and Next Steps
+
+### Indexing and SEO
+
+Somewhat surprisingly, having your site be accessible via search (i.e. Google) is not a given. Google can take anywhere from weeks to months to index your site, and any changes made afterwards (i.e. a new blog post) can take just as long to be indexed. If you want your site to be indexed by search engines quickly, you'll need to submit your site to the search engine. For Google, you can do this [here](https://search.google.com/search-console/welcome). You'll need to verify that you own the domain by adding a TXT record to your DNS records via Cloudflare. Once you've done this, you can submit your site to Google for indexing. This process can take a few days, but once it's done, your site should be indexed by Google.
+
+As for SEO, check out [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) for a great tool for analyzing your site's SEO. Lighthouse will also rate your site's performance and You can also check out [this guide](https://www.searchenginejournal.com/seo-guide/) for a more in-depth look at SEO.
 
 ### SSH from outside networks
 

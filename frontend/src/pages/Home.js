@@ -19,12 +19,12 @@ export default function Home() {
 						<br />
 						<h1>Matheus Duncan</h1>
 						<p className="text">
-							Hi! I'm Matheus, a software developer from Canada. I'm currently studying Computer Science at the University of Alberta in sunny Edmonton, Alberta.
+							Hi! I'm Matheus, a software developer from Canada. I'm currently studying Computer Science at the University of Alberta in sunny Edmonton.
 							<br /><br />
 							I have previous experience working as a software developer at Co-operators, where I worked mainly in full-stack web development and on enterprise-scale Java applications.
 							I also have experience working on freelance and personal projects spanning a variety of technologies, which you can check out in the <a href="#projects">Projects</a> section below.
 							<br /><br />
-							I'm always looking for new opportunities to learn and grow as a developer. If you'd like to get in touch to talk about anything, from freelance work to book recommendations, 
+							I'm always looking for new opportunities to learn and grow as a developer. If you'd like to get in touch to talk about anything programming related, from freelance work to book recommendations, 
 							send me an <a href="mailto:matheus@matheusdu.dev">email</a> or connect with me on <a href="https://www.linkedin.com/in/matheus-duncan/">LinkedIn</a>!
 						</p>
 					</section>
@@ -41,7 +41,7 @@ export default function Home() {
 							I have extensive experience developing freelance projects focused mostly on full-stack web development, some of which you can check out in the <a href="#projects">Projects</a> section below.
 							<br /><br />
 							Currently, I'm dividing my time between Edmonton, where I attend university, and Toronto, where I grew up and currently work remotely.
-							Outside of programming, I enjoy reading, going outdoors, and learning history (admittedly a somewhat unconventional minor to pair with a CS degree).
+							Outside of programming, I enjoy reading, being outdoors, and learning history (admittedly a somewhat unconventional minor to pair with a CS degree).
 						</p>
 					</section>
 					<section id="projects">
