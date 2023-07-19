@@ -1,5 +1,6 @@
 import React from "react";
 import '../static/css/Menubar.css'
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Menubar(props) {
     const navigate = (url) => {
@@ -11,10 +12,10 @@ export default function Menubar(props) {
     if(props.type === "home") {
         return (
             <div className="menubar">
-                <button onClick={ navigate("#home") } className="menubar-button">Matheus Duncan</button>
-                <button onClick={ navigate("#about") } className="menubar-button">About</button>
-                <button onClick={ navigate("#projects") } className="menubar-button">Projects</button>
-                <button onClick={ navigate("#blog") } className="menubar-button">Blog</button>
+                <Link to="#home" className="menubar-button">Matheus Duncan</Link>
+                <Link to="#about" className="menubar-button">About</Link>
+                <Link to="#projects" className="menubar-button">Projects</Link>
+                <Link to="#blog" className="menubar-button">Blog</Link>
             </div>
         );
     } else if(props.type === "blog") {
