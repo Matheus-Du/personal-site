@@ -116,6 +116,36 @@ The first thing we need to do is add our Cloudflare SSL cert to the proxy manage
 
 To setup our default domain, we need to create a new proxy host. Click on the `Proxy Hosts` tab on the dashboard, and then `Add Proxy Host`. Enter your `Domain Names`, in this case your default domain (i.e. `matheusdu.dev`), and then enter your server's local IP address as the `Forward Hostname/IP`. For the `Forward Port`, enter the port that your website's docker container is forwarded to (in our case, 3000). Navigate to the `SSL` section and select your SSL certificate from the dropdown. Enable the `Force SSL` and `HTTP/2 Support` options. Finally, click `Save`. Now your default domain should be pointing to the Docker container running your website.
 
+With Nginx proxy manager, we've now pointed our domain to our Docker container without exposing any ports to the internet besides ports 443 and 80, both of which are protected by our Cloudflare CDN.
+
 ### The Fruits of Our Labor
 
 After setting up our reverse proxy, we have finished the connection between our domain and our website running on our home server. If everything is working correctly, you should now be able to navigate to your domain and see your website. Congratulations, you've successfully setup a website on your home server!
+
+&nbsp;
+## Part 4: Addendum and Next Steps
+
+### SSH from outside networks
+
+Setting up SSH to allow connections outside of the network is, at first glance, a trivial topic. All you'd need to do is forward port 22 from your home server and then connect to the server using your public IP address.
+
+**Don't do this.** Allowing anyone on the internet to connect to your server via SSH is a terrible idea. Within a few minutes of opening any ports to the internet, you'll be able to notice a significant increase in the number of people trying to connect to port 22 from all kinds of sketchy locations. If you allow connections to port 22, it's only a matter of time before someone gains access to your server and does something malicious.
+
+Instead of this, we'll need to use a Virtual Private Network (VPN) to connect to our home network from outside networks. This allows us to open only one port, the one used by the VPN, and then connect to our server through the VPN. This is far more secure and can be setup to run from your home server. Additionally, it provides a level of security when connecting to public networks, as you can route all your traffic through your home network, preventing anyone on the public network from intercepting your traffic.
+
+Setting up a custom VPN is outside the scope of this article, but I recommend using OpenVPN as it's free and open-source. There are plenty of [tutorials](https://openvpn.net/community-resources/how-to/) for setting up a VPN, but I recommend [this script](https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/) for a quick and easy setup.
+
+### Subdomains
+
+If you want to host multiple sites on your home server, you can use subdomains to route requests to different containers. For example, you could have `blog.matheusdu.dev` route to a Docker container running a blog, and `matheusdu.dev` route to a container running a portfolio site. To do this, you'll need use Nginx proxy manager and create a new proxy host for each subdomain. The process is the same as creating a proxy host for your default domain, but you'll need to create a new proxy host for each subdomain you want to use. Just remember to create a new DNS record for each subdomain on Cloudflare.
+
+### Some More Ideas
+
+Now that you have a website running on your home server, you can start to think about what else you can do with it. Here are a few ideas to get you started:
+- Host a [Wordpress](https://wordpress.org/download/) blog or other CMS at a blog subdomain
+- Setup a file server for sharing files with friends and family using something like [Nextcloud](https://nextcloud.com/)
+- Host a [Minecraft](https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server#Docker) server for you and your friends
+- Setup [Plex](https://hub.docker.com/r/linuxserver/plex) to stream your media library to any device with an internet connection
+- Configure a [Bittorrent](https://hub.docker.com/r/linuxserver/qbittorrent) client to download torrents directly to your server (and then stream them on any device for free with Plex)
+
+There are plenty of other things you can do with a home server, but these are just a few ideas to get you started. With a home server, you can host whatever you want, so get creative (just don't get your IP banned from Cloudflare).

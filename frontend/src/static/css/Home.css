@@ -54,6 +54,13 @@
 	color: #A27B5C;
 }
 
+.text code {
+	background-color: #A27B5C;
+	color: white;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+}
+
 .body {
 	background-color: #3F4E4F;
 	font-family: "Helvetica", "Arial", sans-serif;
