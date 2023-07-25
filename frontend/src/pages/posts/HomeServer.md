@@ -49,8 +49,11 @@ If you're just getting started with Docker, I recommend checking out [portainer]
 
 If you're just looking to host a static website, we can easily create a Dockerfile to build a container for our site. Check out the [Dockerfile](https://github.com/Matheus-Du/personal-site/blob/main/frontend/Dockerfile.prod) for this site for an example, or [this tutorial](https://mherman.org/blog/dockerizing-a-react-app/) if you want a full step-by-step walkthrough. We can then build and run our container with the following commands from the root directory of our project (where our Dockerfile is located):
 ```bash
-docker build -t <image_name> -f Dockerfile.prod .
-docker run -d -p 3000:80 -u root --restart=unless-stopped <image_name>
+docker build -t <image_name> \
+    -f Dockerfile.prod .
+docker run -d -p 3000:80 -u root \
+    --restart=unless-stopped \
+    <image_name>
 ```
 Let's take a quick look at what these commands will do:
 - `docker build -t <image_name> -f Dockerfile.prod .`: This command will build a Docker image from our Dockerfile. The `-t` flag allows us to specify a name for our image, and the `-f` flag allows us to specify the name of our Dockerfile. The `.` at the end of the command tells Docker to look for the Dockerfile in the current directory.
