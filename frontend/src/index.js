@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './static/css/index.css';
 import reportWebVitals from './reportWebVitals';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import HomeServer from './pages/posts/HomeServer';
 import Blog from './pages/Blog';
@@ -10,13 +10,13 @@ import Blog from './pages/Blog';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route exact path="/" element={<Home />} />
 				<Route path="/blog" element={<Blog />} />
 				<Route path="/blog/a-complete-guide-to-building-and-deploying-a-website-on-your-home-server" element={<HomeServer />} />
 			</Routes>
-	</HashRouter>
+	</BrowserRouter>
   </React.StrictMode>
 );
 
