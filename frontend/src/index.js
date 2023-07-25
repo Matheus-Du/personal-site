@@ -15,7 +15,7 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/blog" element={<Blog />} />
 				<Route path="/blog/a-complete-guide-to-building-and-deploying-a-website-on-your-home-server" element={<HomeServer />} />
-				<Route path="/blog/#/a-complete-guide-to-building-and-deploying-a-website-on-your-home-server" element={<HomeServer />} />
+				<Route path="/#/blog/a-complete-guide-to-building-and-deploying-a-website-on-your-home-server" element={<HomeServer />} />
 			</Routes>
 	</BrowserRouter>
   </React.StrictMode>
